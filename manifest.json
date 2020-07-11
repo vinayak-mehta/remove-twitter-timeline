@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Remove Twitter Timeline",
+    "version": "0.1.0",
+    "description": "Firefox add-on that removes the timeline on Twitter",
+    "icons": {
+        "48": "icons/logo-48.png",
+        "96": "icons/logo-96.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "*://twitter.com/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
