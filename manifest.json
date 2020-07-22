@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Remove Twitter Timeline",
     "version": "0.1.1",
-    "description": "Firefox add-on that removes the timeline on Twitter",
+    "description": "A web extension that removes the timeline on Twitter",
     "homepage_url": "https://github.com/vinayak-mehta/remove-twitter-timeline",
     "icons": {
         "48": "icons/logo-48.png",
