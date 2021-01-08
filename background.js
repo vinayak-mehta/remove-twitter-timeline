@@ -1,7 +1,7 @@
 var browser = browser || chrome
 
 function handleCreated(tabInfo) {
-  if(tabInfo.url == "https://twitter.com/home") {
+  if(tabInfo.url.includes("twitter.com/home")) {
     browser.tabs.executeScript(tabInfo.id, {
       file: "remove-timeline.js",
       runAt: "document_idle"
@@ -10,7 +10,7 @@ function handleCreated(tabInfo) {
 }
 
 function handleUpdated(tabId, changeInfo, tabInfo) {
-  if(changeInfo.url == "https://twitter.com/home") {
+  if(tabInfo.url.includes("twitter.com/home")) {
     browser.tabs.executeScript(tabId, {
       file: "remove-timeline.js",
       runAt: "document_idle"

@@ -1,19 +1,15 @@
 {
-    "manifest_version": 2,
-    "name": "Remove Twitter Timeline",
-    "version": "0.1.1",
-    "description": "A web extension that removes the timeline on Twitter",
-    "homepage_url": "https://github.com/vinayak-mehta/remove-twitter-timeline",
-    "icons": {
-        "48": "icons/logo-48.png",
-        "96": "icons/logo-96.png"
-    },
-    "background": {
-        "scripts": ["background.js"]
-    },
-    "permissions": [
-        "tabs",
-        "activeTab",
-        "*://twitter.com/*"
-    ]
+  "manifest_version": 2,
+  "name": "Remove Twitter Timeline",
+  "version": "0.1.1",
+  "description": "A web extension that removes the timeline on Twitter",
+  "homepage_url": "https://github.com/vinayak-mehta/remove-twitter-timeline",
+  "icons": {
+    "48": "icons/logo-48.png",
+    "96": "icons/logo-96.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs", "activeTab", "*://twitter.com/*"]
 }
