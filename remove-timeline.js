@@ -5,9 +5,11 @@ function getElementByXpath(path) {
 }
 
 function checkTimeline() {
-  var timeline = getElementByXpath("/html/body/div/div/div/div[2]/main/div/div/div");
+  const timeline = getElementByXpath("/html/body/div/div/div/div[2]/main/div/div/div");
+  const atHome = window.location.href.includes("twitter.com/home")
+
   if (timeline != null) {
-    timeline.style.visibility = "hidden";
+    timeline.style.visibility = atHome ? "hidden" : "visible";
     clearInterval(interval);
   }
 }
